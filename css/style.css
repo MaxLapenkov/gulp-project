@@ -903,7 +903,7 @@ a {
           border: 1px solid #555555;
           padding: 0;
           margin: 0;
-          width: 100%;
+          width: 730px;
           height: 100px; }
           .section-contact-bottom-form-text textarea::placeholder {
             padding-left: 20px;
@@ -915,7 +915,7 @@ a {
           color: gray;
           background-color: #fff;
           cursor: pointer; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .section-contact-bottom {
       flex-direction: column;
       justify-content: center; }
@@ -928,5 +928,5 @@ a {
           .section-contact-bottom-info-item-icon {
             display: none; }
       .section-contact-bottom-form {
-        margin-left: 0;
-        justify-content: center; } }
+        margin: 0 auto;
+        justify-content: space-around; } }

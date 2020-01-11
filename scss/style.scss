@@ -817,7 +817,7 @@ a {
           border: 1px solid #555555;
           padding: 0;
           margin: 0;
-          width: 100%;
+          width: 730px;
           height: 100px;
           &::placeholder {
             padding-left: 20px;
@@ -836,7 +836,7 @@ a {
       }
     }
   }
-  @media(max-width: $screen-sm-max){
+  @media(max-width: $screen-md-max){
     &-bottom{
         flex-direction: column;
         justify-content: center;
@@ -852,8 +852,8 @@ a {
         }
       }
       &-form{
-        margin-left: 0;
-        justify-content: center;
+        margin: 0 auto;
+        justify-content: space-around;
       }
       }
     
