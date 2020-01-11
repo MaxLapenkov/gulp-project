@@ -854,6 +854,11 @@ a {
       &-form{
         margin: 0 auto;
         justify-content: space-around;
+        &-text{
+          textarea{
+            width: 100%;
+          }
+        }
       }
       }
     

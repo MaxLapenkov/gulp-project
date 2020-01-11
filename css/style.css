@@ -929,4 +929,6 @@ a {
             display: none; }
       .section-contact-bottom-form {
         margin: 0 auto;
-        justify-content: space-around; } }
+        justify-content: space-around; }
+        .section-contact-bottom-form-text textarea {
+          width: 100%; } }
