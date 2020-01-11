@@ -33,10 +33,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.section-outer{
-  padding-right: 20px;
-  padding-right: 20px;
-}
+
 .section-inner {
   margin: 0 auto;
   display: flex;
@@ -562,7 +559,7 @@ a {
       }
       &-text {
         word-wrap: break-word;
-        width: 640px;
+        max-width: 640px;
         position: relative;
         &-date {
           position: absolute;
@@ -612,6 +609,7 @@ a {
           line-height: 24px;
         }
       }
+      
     }
     .item1 {
       padding-bottom: 40px;
@@ -620,6 +618,25 @@ a {
     .item2 {
       padding-top: 40px;
     }
+  }
+  @media(max-width: $screen-sm-max){
+    &-wrapper{
+      justify-content: center;
+      &-item{
+        flex-direction: column;
+        justify-content: center;
+        &-img{
+          align-self: center;
+          margin-right: 0;
+        }
+        &-text{
+          align-self: center;
+          margin-top: 20px;
+        }
+      }
+      
+    }
+    
   }
 }
 .section-companies {

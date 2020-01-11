@@ -311,10 +311,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.section-outer {
-  padding-right: 20px;
-  padding-right: 20px; }
-
 .section-inner {
   margin: 0 auto;
   display: flex;
@@ -712,7 +708,7 @@ a {
         background: url("../img/Blog2.png") no-repeat 50% 50%; }
       .section-posts-wrapper-item-text {
         word-wrap: break-word;
-        width: 640px;
+        max-width: 640px;
         position: relative; }
         .section-posts-wrapper-item-text-date {
           position: absolute;
@@ -758,6 +754,18 @@ a {
       border-bottom: 2px solid #eeeeee; }
     .section-posts-wrapper .item2 {
       padding-top: 40px; }
+  @media (max-width: 767px) {
+    .section-posts-wrapper {
+      justify-content: center; }
+      .section-posts-wrapper-item {
+        flex-direction: column;
+        justify-content: center; }
+        .section-posts-wrapper-item-img {
+          align-self: center;
+          margin-right: 0; }
+        .section-posts-wrapper-item-text {
+          align-self: center;
+          margin-top: 20px; } }
 
 .section-companies {
   background-color: #f8f8f8;
