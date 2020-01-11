@@ -706,9 +706,9 @@ a {
         height: 320px;
         margin-right: 35px; }
       .section-posts-wrapper-item .img1 {
-        background: url("../img/Blog1.png") no-repeat 50% 50%; }
+        background: url("../img/Blog1.jpg") no-repeat 50% 50%; }
       .section-posts-wrapper-item .img2 {
-        background: url("../img/Blog2.png") no-repeat 50% 50%; }
+        background: url("../img/Blog2.jpg") no-repeat 50% 50%; }
       .section-posts-wrapper-item-text {
         word-wrap: break-word;
         max-width: 640px;
