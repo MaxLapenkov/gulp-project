@@ -305,8 +305,7 @@ template {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: gray;
-  overflow-x: hidden; }
+  color: gray; }
 
 a {
   text-decoration: none;
@@ -455,6 +454,9 @@ a {
         font-family: "Roboto Slab", serif; }
     .section-services-bottom-item:first-child {
       margin-left: 0; }
+  @media (max-width: 1199px) {
+    .section-services-bottom-item-desc {
+      font-size: 10px; } }
 
 .section-about {
   padding-top: 100px;
@@ -763,7 +765,8 @@ a {
         justify-content: center; }
         .section-posts-wrapper-item-img {
           align-self: center;
-          margin-right: 0; }
+          margin-right: 0;
+          width: 100%; }
         .section-posts-wrapper-item-text {
           align-self: center;
           margin-top: 20px; } }
@@ -931,5 +934,9 @@ a {
       .section-contact-bottom-form {
         margin: 0 auto;
         justify-content: space-around; }
-        .section-contact-bottom-form-text textarea {
-          width: 100%; } }
+        .section-contact-bottom-form-text {
+          display: flex;
+          justify-content: center;
+          align-self: center; }
+          .section-contact-bottom-form-text textarea {
+            width: 90%; } }

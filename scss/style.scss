@@ -28,7 +28,7 @@ $screen-lg-max: 1199px;
 body {
   @include font-mont;
   color: gray;
-  overflow-x: hidden;
+  
 }
 a {
   text-decoration: none;
@@ -221,6 +221,15 @@ a {
       margin-left: 0;
     }
   }
+  @media(max-width: $screen-lg-max){
+    &-bottom{
+      &-item{
+        &-desc{
+          font-size: 10px;
+        }
+      }
+    }
+   }
 }
 .section-about {
   padding-top: 100px;
@@ -629,6 +638,7 @@ a {
         &-img{
           align-self: center;
           margin-right: 0;
+          width: 100%;
         }
         &-text{
           align-self: center;
@@ -856,8 +866,12 @@ a {
         margin: 0 auto;
         justify-content: space-around;
         &-text{
+          display: flex;
+          justify-content: center;
+          align-self: center;
           textarea{
-            width: 100%;
+            
+            width: 90%;
           }
         }
       }
