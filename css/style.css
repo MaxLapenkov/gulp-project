@@ -305,7 +305,8 @@ template {
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: gray; }
+  color: gray;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;

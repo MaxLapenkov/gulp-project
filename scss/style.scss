@@ -28,6 +28,7 @@ $screen-lg-max: 1199px;
 body {
   @include font-mont;
   color: gray;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
