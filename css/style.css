@@ -942,7 +942,8 @@ a {
         .section-contact-bottom-form-button button {
           color: gray;
           background-color: #fff;
-          cursor: pointer; }
+          cursor: pointer;
+          margin-left: 1px; }
   @media (max-width: 991px) {
     .section-contact-bottom {
       flex-direction: column;
