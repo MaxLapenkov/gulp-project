@@ -23,11 +23,13 @@ $screen-xl: 1200px;
 $screen-sm-max: 767px;
 $screen-md-max: 991px;
 $screen-lg-max: 1199px;
+$color: white;
+$color2: complement($color);
 
 //===/Variables ===
 body {
   @include font-mont;
-  color: gray;
+  @include color-main;
   
 }
 a {
@@ -73,6 +75,9 @@ a {
   align-items: center;
   justify-content: center;
   border: 2px solid white;
+  &:hover{
+    border-color: black;
+  }
 }
 //--header--//
 .section-header {
@@ -80,7 +85,8 @@ a {
   background: url("../img/head.jpg") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
-
+  
+  
   .section-inner {
     max-width: 1140px;
     margin: 0 auto;
@@ -113,6 +119,31 @@ a {
       line-height: 36px;
     }
     &-nav {
+      a{
+        color: $color;
+        &:hover {
+            color: $color2;
+        }
+        position: relative;
+        transition: all 0.6s;
+        &:before {
+          content: "";
+          width: 0;
+          height: 0.1em;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: $color;
+          transition: all 0.3s;
+      }
+      &:hover {
+          &:before {
+              width: 100%;
+              left: 0;
+              background: $color2;
+          }
+      }
+    }
       li {
         list-style-type: none;
         margin-left: 35px;
@@ -562,10 +593,12 @@ a {
         margin-right: 35px;
       }
       .img1 {
-        background: url("../img/Blog1.jpg") no-repeat 50% 50%;
+        background: url("../img/product1.png") no-repeat 50% 50%;
+        background-size: cover;
       }
       .img2 {
-        background: url("../img/Blog2.jpg") no-repeat 50% 50%;
+        background: url("../img/product2.png") no-repeat 50% 50%;
+        background-size: cover;
       }
       &-text {
         word-wrap: break-word;
@@ -578,6 +611,7 @@ a {
           width: 75px;
           height: 75px;
           background: url("../img/Date.png") no-repeat 50% 50%;
+          background-size: cover;
         }
         h2 {
           padding: 0;
